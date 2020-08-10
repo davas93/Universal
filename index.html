@@ -128,7 +128,7 @@
     </header>
 
     <!-- Лента со статьями -->
-    <section class="feed">
+    <div class="feed">
       <div class="container">
         <div class="feed-wrapper">
           <a href="#" class="feed__item">
@@ -140,7 +140,7 @@
               alt="image: guitar"
               class="feed__image"
             />
-          </a href="#">
+          </a>
           <!-- /.feed__item -->
           <a href="#" class="feed__item">
             <span class="feed__text"
@@ -151,7 +151,7 @@
               alt="image: guitar"
               class="feed__image"
             />
-          </a href="#">
+          </a>
           <!-- /.feed__item -->
           <a href="#" class="feed__item">
             <span class="feed__text"
@@ -162,7 +162,7 @@
               alt="image: guitar"
               class="feed__image"
             />
-          </a href="#">
+          </a>
           <!-- /.feed__item -->
           <a href="#" class="feed__item">
             <span class="feed__text">International Soccer’s Man of Mystery</span
@@ -172,10 +172,112 @@
               alt="image: guitar"
               class="feed__image"
             />
-          </a href="#">
+          </a>
           <!-- /.feed__item -->
         </div>
         <!-- /.feed-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+
+    <!-- Секция с главной статьей -->
+    <section class="main-article">
+      <div class="container">
+        <div class="main-article-wrapper">
+          <div class="article">
+            <div class="main-article__author">
+              <img
+                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                data-src="img/main-article/avatar-1.png"
+                alt="image: avatar"
+                class="main-article__author-avatar"
+              />
+              <div class="main-article__author-text">
+                <span class="main-article__author-name">By Benjamin Turner</span
+                ><span class="main-article__author-descr">Traveler</span>
+              </div>
+            </div>
+            <!-- /.article-author-->
+            <span class="theme theme--blue">Destinations</span>
+            <h2 class="main-article__title">
+              In Southeast England, White Cliffs and Fish
+            </h2>
+            <div class="main-article__interface">
+              <button class="button">
+                Read more
+                <img
+                  class="button__arrow"
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src="img/main-article/arrow-right.svg"
+                  alt="icon: arrow"
+                />
+              </button>
+              <div class="play">
+                <button class="play__button">
+                  <img
+                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="img/main-article/play.svg"
+                    alt="icon: play"
+                    class="play__button-start"
+                  />
+                </button>
+
+                <div class="play__text">
+                  <span class="play__name">The chalk cliff of Beachy Head</span>
+                  <span class="play__time">18:05</span>
+                </div>
+                <!-- /.play__text -->
+              </div>
+              <!-- /.play -->
+            </div>
+            <!-- /.main-article__intarface -->
+          </div>
+          <!-- /.article-->
+          <ul class="recommended">
+            <li class="recommended-title">Recommended for you</li>
+            <li class="recommended-item">
+              <span class="theme theme--turquoise">Food</span>
+              <span class="recommended-item__descr"
+                >For Chicken-Fried Steak, Too Much Is Just Enough
+                <img
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src="img/main-article/play-icon.svg"
+                  alt="icon: play"
+                  class="recommended-item__play-icon"
+              /></span>
+            </li>
+            <li class="recommended-item">
+              <span class="theme theme--gray-blue">Cars</span>
+              <span class="recommended-item__descr"
+                >Storm Has Car Dealers Doing Swift Business</span
+              >
+            </li>
+            <li class="recommended-item">
+              <span class="theme theme--purple">Movies</span>
+              <span class="recommended-item__descr"
+                >War Is Hell? In New Military Dramas, It’s One-Dimensional</span
+              >
+            </li>
+            <li class="recommended-item">
+              <span class="theme theme--orange">NFL</span>
+              <span class="recommended-item__descr"
+                >11 surprising stat rankings for active NFL players
+                <img
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src="img/main-article/play-icon.svg"
+                  alt="icon: play"
+                  class="recommended-item__play-icon"
+              /></span>
+            </li>
+            <li class="recommended-item">
+              <span class="theme theme--green">Tech Reviews</span>
+              <span class="recommended-item__descr"
+                >The bookcases you can buy online and assemble yourself</span
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- /.main-article-wrapper -->
       </div>
       <!-- /.container -->
     </section>

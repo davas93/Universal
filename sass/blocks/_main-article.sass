@@ -1,0 +1,107 @@
+.main-article
+  padding-bottom: 30px
+  background: linear-gradient(to top, $body-bg 52%, $dark 48%)
+  &-wrapper
+    display: flex
+    align-items: flex-start
+    border-radius: 10px
+    overflow: hidden
+  &__author
+    display: flex
+    align-items: center
+    margin-bottom: 145px
+    &-avatar
+      width: 45px
+      height: 45px
+      margin-right: 10px
+      border-radius: 50%
+      object-fit: cover
+    &-name
+      display: block
+      margin-bottom: 2px
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      opacity: 0.85
+    &-descr
+      display: block
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      opacity: 0.4
+  &__title
+    max-width: 598px
+    margin-top: 25px
+    margin-bottom: 40px
+    font-family: Roboto Slab, sans-serif
+    font-weight: 700
+    font-size: 40px
+    line-height: 50px
+    color: $light
+  &__interface
+    display: flex
+    align-items: center
+.play
+  display: flex
+  align-items: center
+  &__name
+    display: block
+    font-size: 14px
+    line-height: 20px
+    color: $light
+    opacity: 0.85
+  &__time
+    display: block
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    opacity: 0.4
+  &__button
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: 30px
+    margin-right: 10px
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: transparent
+    border: 3px solid transparentize($light, 0.4)
+    &-start
+      margin-left: 5px
+.article
+  flex-basis: 77%
+  padding: 55px 0 95px 55px
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/main-article/article-bg-1.png)
+  background-repeat: no-repeat
+  background-size: cover
+.recommended
+  flex-basis: 23%
+  margin: 0
+  padding: 0
+  align-self: stretch
+  background-color: $light
+  &-title
+    display: block
+    margin: 0
+    padding: 20px 25px
+    font-weight: 700
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    border-bottom: 1px solid $line-color
+  &-item
+    padding: 18px 25px
+    border-bottom: 1px solid $line-color
+    cursor: pointer
+    &:last-child
+      border: none
+    &__descr
+      display: inline-block
+      margin-top: 8px
+      font-size: 14px
+      line-height: 20px
+    &__play-icon
+      vertical-align: bottom
+      margin-left: 5px
