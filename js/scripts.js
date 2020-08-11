@@ -15,3 +15,15 @@ $(".menu-button").on("click", function () {
 $(".navbar-menu__item").on("click", function () {
   $(".navbar-bottom").removeClass("navbar-bottom--active");
 });
+
+//Вызов модального окна с видео
+$(".play__button").on("click", function () {
+  $("#youtube").attr("src", "https://www.youtube.com/embed/rx783h43B_Q");
+  $(".modal-video").addClass("modal-video--active");
+  $(".overlay").addClass("overlay--active");
+});
+$(".close-button").on("click", function () {
+  $("#youtube").attr("src", null);
+  $(".modal-video").removeClass("modal-video--active");
+  $(".overlay").removeClass("overlay--active");
+});
