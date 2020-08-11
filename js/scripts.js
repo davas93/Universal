@@ -7,3 +7,11 @@ window.onload = () => {
     }
   }
 };
+
+//Мобильное меню
+$(".menu-button").on("click", function () {
+  $(".navbar-bottom").toggleClass("navbar-bottom--active");
+});
+$(".navbar-menu__item").on("click", function () {
+  $(".navbar-bottom").removeClass("navbar-bottom--active");
+});
