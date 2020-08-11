@@ -27,7 +27,10 @@
     &__text
       font-size: 14px
   .recommended
-    flex-basis: 30%
+    &-wrapper
+      flex-basis: 30%
+    .article
+      flex-basis: 70%
 
 //Адаптив для средних экранов
 @media ( max-width: 992px )
@@ -75,7 +78,6 @@
     &__author
       margin-bottom: 90px
   .recommended
-    flex-basis: 30%
     &-item
       padding: 10px 15px
       &__descr
@@ -165,8 +167,6 @@
     &__button
       margin-left: 0
   .recommended
-    overflow-y: scroll
-    max-height: 385px
     &-title
       line-height: 15px
     &-item

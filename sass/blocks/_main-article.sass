@@ -3,7 +3,6 @@
   background: linear-gradient(to top, $body-bg 52%, $dark 48%)
   &-wrapper
     display: flex
-    align-items: flex-start
     border-radius: 10px
     overflow: hidden
   &__author
@@ -72,7 +71,6 @@
 .article
   display: none
   flex-basis: 77%
-  align-self: stretch
   padding: 55px 0 95px 55px
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/main-article/article-bg-1.jpg)
   background-repeat: no-repeat
@@ -96,11 +94,15 @@
     background-repeat: no-repeat
     background-size: cover
 .recommended
-  flex-basis: 23%
   margin: 0
   padding: 0
-  align-self: stretch
   background-color: $light
+  flex-basis: 100%
+  &-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex-basis: 23%
   &-title
     display: block
     margin: 0
@@ -110,6 +112,7 @@
     line-height: 20px
     letter-spacing: 0.5px
     text-transform: uppercase
+    background-color: $light
     border-bottom: 1px solid $line-color
   &-item
     padding: 18px 25px
