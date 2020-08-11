@@ -18,12 +18,14 @@ $(".navbar-menu__item").on("click", function () {
 
 //Вызов модального окна с видео
 $(".play__button").on("click", function () {
-  $("#youtube").attr("src", "https://www.youtube.com/embed/rx783h43B_Q");
+  $("#youtube-1").attr("src", "https://www.youtube.com/embed/rx783h43B_Q");
+  $("#youtube-2").attr("src", "https://www.youtube.com/embed/xRsbaH_uXo0");
   $(".modal-video").addClass("modal-video--active");
   $(".overlay").addClass("overlay--active");
 });
 $(".close-button").on("click", function () {
-  $("#youtube").attr("src", null);
+  $("#youtube-1").attr("src", null);
+  $("#youtube-2").attr("src", null);
   $(".modal-video").removeClass("modal-video--active");
   $(".overlay").removeClass("overlay--active");
 });
