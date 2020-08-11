@@ -27,3 +27,24 @@ $(".close-button").on("click", function () {
   $(".modal-video").removeClass("modal-video--active");
   $(".overlay").removeClass("overlay--active");
 });
+
+//Табы
+(function ($) {
+  $(function () {
+    $(".recommended").on(
+      "click",
+      ".recommended-item:not(.recommended-item--active)",
+      function () {
+        $(this)
+          .addClass("recommended-item--active")
+          .siblings()
+          .removeClass("recommended-item--active")
+          .closest(".main-article-wrapper")
+          .find(".article")
+          .removeClass("article--active")
+          .eq($(this).index())
+          .addClass("article--active");
+      }
+    );
+  });
+})(jQuery);

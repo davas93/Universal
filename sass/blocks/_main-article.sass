@@ -76,6 +76,8 @@
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/main-article/article-bg-1.jpg)
   background-repeat: no-repeat
   background-size: cover
+  &--active
+    display: block
 .recommended
   flex-basis: 23%
   margin: 0
@@ -106,3 +108,15 @@
     &__play-icon
       vertical-align: bottom
       margin-left: 5px
+    &--active
+      position: relative
+      background-color: #F5F5F5
+      &::after
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -22px
+        content: ""
+        margin: 0
+        border: 10px solid transparent
+        border-right: 12px solid #F5F5F5
