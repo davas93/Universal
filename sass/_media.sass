@@ -85,6 +85,10 @@
     &-title
       padding: 10px 15px
       font-size: 12px
+  .modal-video
+    width: 480px
+    height: 320px
+
 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -152,6 +156,8 @@
   .article
     padding: 20px 30px 50px 30px
   .main-article
+    &-wrapper
+      max-height: 430px
     &__author
       margin-bottom: 40px
     &__title
@@ -167,6 +173,7 @@
     &__button
       margin-left: 0
   .recommended
+    overflow-y: scroll
     &-title
       line-height: 15px
     &-item
@@ -200,7 +207,10 @@
     padding-top: 20px
   .main-article
     &-wrapper
+      max-height: none
       flex-direction: column
+  .article
+    min-height: 435px
   .recommended
     display: flex
     &-title
@@ -211,5 +221,7 @@
       flex-basis: 200px
       &:not(:last-child)
         border-right: 1px solid $line-color
-
+  .modal-video
+    width: 320px
+    height: 240px
 
