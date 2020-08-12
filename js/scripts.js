@@ -60,3 +60,8 @@ $(function () {
     $num.eq(i).text(++i);
   }
 });
+
+//Изменение цвета закладки
+$(".feature-articles__item-bookmark").on("click", function () {
+  $(this).toggleClass("feature-articles__item-bookmark--active");
+});
