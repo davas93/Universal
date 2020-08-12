@@ -45,6 +45,22 @@
         margin-bottom: 20px
   .feature-articles__item-image
     width: 250px
+  .hot-articles
+    &-wrapper
+      column-gap: 20px
+      row-gap: 20px
+    &__slide
+      padding: 40px 30px 40px 30px
+    &__careers
+      &-image
+        right: 15px
+      &-title
+        font-size: 24px
+      &-text
+        max-width: 180px
+      &::before
+        top: 65px
+        right: 10px
 
 //Адаптив для средних экранов
 @media ( max-width: 992px )
@@ -122,6 +138,7 @@
         margin 0
   .feature-articles
     padding-top: 40px
+    padding-bottom: 40px
     &-wrapper
       column-gap: 15px
     &__item
@@ -139,6 +156,26 @@
     &__title
       font-size: 12px
       line-height: 15px
+  .hot-articles
+    padding: 40px 0
+    &-wrapper
+    &__sliders
+      grid-column: span 9
+    &__careers
+      grid-column: span 12
+      &-text
+        max-width: 213px
+      &::before
+        right: 50px
+      &-image
+        right: 80px
+  .popular-article
+    &--coffee
+      grid-column: 10 / span 3
+      grid-row: 1
+    &--manufacture
+      grid-column: 10 / span 3
+      grid-row: 2
 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -246,6 +283,23 @@
         font-size: 12px
       &-published
         font-size: 10px
+  .hot-articles
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+    &__slide
+      padding: 40px 60px 100px 60px
+    &__title
+      font-size: 30px
+      line-height: 40px
+    &__careers
+      flex-basis: 100%
+  .popular-article
+    &--coffee
+      flex-basis: 48%
+    &--manufacture
+      flex-basis: 48%
 
 //Адаптив для меленьких экранов
 @media ( max-width: 575px )
@@ -331,6 +385,25 @@
         font-size: 14px
       &-published
         font-size: 12px
+  .hot-articles
+    &__slide
+      padding: 40px 20px 100px 20px
+    &__careers
+      padding: 25px 20px 40px 25px
+      &::before
+        width: 240px
+        height: 240px
+        right: 20px
+        top: 80px
+      &-image
+        object-fit: contain
+        height: 320px
+        right: 20px
+  .popular-article
+    &--coffee
+      flex-basis: 100%
+    &--manufacture
+      flex-basis: 100%
 
 //Для самых маленьких
 @media ( max-width: 480px )
@@ -339,3 +412,16 @@
       flex-direction: column
     &__text
       padding-right: 30px
+  .hot-articles
+    &__title
+      font-size: 28px
+    &__careers
+      &-image
+        display: none
+      &::before
+        display: none
+      &-title
+        maw-width: 100%
+      &-content
+        max-width: 100%
+      
