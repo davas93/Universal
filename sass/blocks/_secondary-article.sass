@@ -1,0 +1,29 @@
+.secondary-article
+  position: relative
+  margin-bottom: 60px
+  background: url(../img/secondary-article/bg.jpg) center no-repeat
+  background-size: cover
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+  &-wrapper
+    text-align: center
+    padding: 50px 0 55px 0
+  &__title
+    position: relative
+    max-width: 670px
+    margin: 0 auto 25px auto
+    font-family: Roboto Slab
+    font-weight: 700
+    font-size: 40px
+    line-height: 50px
+    color: $light
+    text-align: center
+  &__button
+    position: relative
+    display: inline-block
