@@ -50,3 +50,13 @@ $(".close-button").on("click", function () {
     );
   });
 })(jQuery);
+
+//Нумерация рекомедованых статей
+$(function () {
+  var $num = $(".recommended-sidebar__item-num"),
+    number = $num.length,
+    i = 0;
+  while (i < number) {
+    $num.eq(i).text(++i);
+  }
+});
