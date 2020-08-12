@@ -20,6 +20,12 @@
     border-bottom: 1px solid $line-color
     &:last-of-type
       border: none
+    &-content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-self: stretch
+      padding: 5px 0
     &-image
       width: 336px
       height: 195px
@@ -34,7 +40,7 @@
     &-text
       margin: 0 0 20px 0
       font-size: 14px
-      line-height: 20px
+      line-height: 20px   
     &-like-wrap
       display: flex
       align-items: center
@@ -96,7 +102,6 @@
       object-fit: cover
     &-descr
       display: block
-      margin-bottom: 5px
       font-size: 14px
       line-height: 20px
     &-published
