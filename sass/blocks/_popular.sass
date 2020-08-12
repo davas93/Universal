@@ -1,7 +1,12 @@
 .popular
   background-color: $body-bg
+  &-wrapper
+    display: grid
+    grid-template: repeat(3, min-content)/repeat(12, 1fr)
+    column-gap: 30px
+    row-gap: 30px
 .article-cars
-  width: 555px
+  grid-column: span 6
   border-radius: 10px
   background-color: $light
   overflow: hidden
@@ -13,6 +18,7 @@
   &__image
     flex-basis: 52%
     height: 100%
+    margin-top: 15px
     object-fit: cover
   &__title
     margin: 20px 0 25px 0
@@ -61,7 +67,7 @@
       color: #939699
 .article-design
   position: relative
-  width: 263px
+  grid-column: span 3
   padding: 160px 35px 25px 25px
   border-radius: 10px
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/popular/hand.jpg)
@@ -128,7 +134,8 @@
   &--pink
     margin-bottom: 10px
 .article-cats
-  width: 263px
+  grid-column: 1 / span 3
+  grid-row: 2 / span 2
   background-color: $light
   border-radius: 10px
   overflow: hidden
@@ -138,14 +145,14 @@
     object-fit: cover
   &__title
     margin: 0
-    padding: 15px 25px 30px 25px
+    padding: 15px 25px 27px 25px
     font-family: Roboto Slab
     font-size: 16px
     line-height: 25px
     color: $dark
 .popular-article
-  width: 263px
-  padding: 25px 25px 30px 25px
+  grid-column: span 3
+  padding: 25px 25px 27px 25px
   background-color: $light
   border-radius: 10px
   &__title
@@ -163,10 +170,11 @@
     line-height: 15px
     color: #939699
 .columns
+  grid-column: 10 / span 3
+  grid-row: 1 / span 3
   display: flex
   flex-direction: column
   align-items: center
-  width: 263px
   background-color: #6E99AE
   border-radius: 10px
   color: $light
@@ -186,6 +194,8 @@
     width: 77%
     padding: 45px 0 40px 0
     border-bottom: 1px solid rgba(#B4D1E0 ,0.5 )
+    &:last-of-type
+      border: none
     &::before
       content: ""
       position: absolute
@@ -199,13 +209,14 @@
     &__title
       position: relative
       z-index: 1
-      margin: 0 0 15px 0
+      margin: 0 0 15px 10px
       font-family: Roboto Slab
       font-size: 20px
       line-height: 25px
     &__user
       display: flex
       align-items: center
+      margin-left: 10px
       &-avatar
         width: 45px
         height: 45px
