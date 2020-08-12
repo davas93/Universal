@@ -31,11 +31,23 @@
       flex-basis: 30%
     .article
       flex-basis: 70%
+  .popular
+    &-wrapper
+      grid-template: repeat(4, min-content) / repeat(9, 1fr)
+  .article-cars
+  .columns
+    grid-column: 7 / span 3
+    grid-row: 2 / span 3
+    &-item
+      &:last-of-type
+        display: none
+      &:nth-last-of-type(2)
+        margin-bottom: 20px
 
 //Адаптив для средних экранов
 @media ( max-width: 992px )
   .container
-    max-width: 740px
+    max-width: 720px
   .navbar
     &-descr
       &__image
@@ -88,7 +100,26 @@
   .modal-video
     width: 480px
     height: 320px
-
+  .popular
+    padding-bottom: 40px
+    &-wrapper
+      grid-template: repeat(6, min-content) / repeat(6, 1fr)
+    .article
+      &-design
+        grid-column: 1 / span 3
+      &-cats
+        grid-column: 4 / span 3
+        grid-row: 2 / span 1
+  .columns
+    grid-column: 4 / span 3
+    grid-row: 3 / span 4
+    &-item
+      &:last-of-type
+        display: block
+      &:nth-last-of-type(2)
+        margin 0
+  .secondary-article
+    margin-bottom: 40px
 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -177,6 +208,10 @@
     &-title
       line-height: 15px
     &-item
+  .secondary-article
+    &__title
+      font-size: 30px
+      line-height: 40px
 
 //Адаптив для меленьких экранов
 @media ( max-width: 575px )
@@ -227,4 +262,27 @@
   .modal-video
     width: 320px
     height: 240px
+  .popular
+    &-wrapper
+      display: flex
+      flex-direction: column
+      row-gap: 20px
+  .article-cars
+    &__comments
+      justify-content: flex-start
+      padding-left: 35px
+    &__paragraph
+      padding-bottom: 30px
+  .comment-text
+    display: none
+  .user
+    &__name
+      margin-right: 30px
 
+//Для самых маленьких
+@media ( max-width: 480px )
+  .article-cars
+    &__content
+      flex-direction: column
+    &__text
+      padding-right: 30px
