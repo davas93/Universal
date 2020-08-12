@@ -120,25 +120,25 @@
         display: block
       &:nth-last-of-type(2)
         margin 0
-.feature-articles
-  padding-top: 40px
-  &-wrapper
-    column-gap: 15px
-  &__item
-    flex-direction: column
+  .feature-articles
+    padding-top: 40px
+    &-wrapper
+      column-gap: 15px
+    &__item
+      flex-direction: column
+      flex-basis: 50%
+      margin: 0 20px
+      padding: 20px 0 25px 0
+      &-image
+        width: 100%
+        margin: 0
+      &-bookmark
+        top: 90%
+  .recommended-sidebar
     flex-basis: 50%
-    margin: 0 20px
-    padding: 20px 0 25px 0
-    &-image
-      width: 100%
-      margin: 0
-    &-bookmark
-      top: 90%
-.recommended-sidebar
-  flex-basis: 50%
-  &__title
-    font-size: 12px
-    line-height: 15px
+    &__title
+      font-size: 12px
+      line-height: 15px
 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -236,16 +236,16 @@
   &__item
     margin: 0 15px
     padding: 15px 0 25px 0
-.recommended-sidebar
-  &__title
-    font-size: 12px
-    line-height: 15px
-  &__item
-    margin: 0 15px
-    &-descr
+  .recommended-sidebar
+    &__title
       font-size: 12px
-    &-published
-      font-size: 10px
+      line-height: 15px
+    &__item
+      margin: 0 15px
+      &-descr
+        font-size: 12px
+      &-published
+        font-size: 10px
 
 //Адаптив для меленьких экранов
 @media ( max-width: 575px )
@@ -320,17 +320,17 @@
     &__item
       &-image
         height: 250px
-.recommended-sidebar
-  width: 100%
-  &__title
-    font-size: 14px
-    line-height: 15px
-  &__item
-    margin: 0 20px
-    &-descr
+  .recommended-sidebar
+    width: 100%
+    &__title
       font-size: 14px
-    &-published
-      font-size: 12px
+      line-height: 15px
+    &__item
+      margin: 0 20px
+      &-descr
+        font-size: 14px
+      &-published
+        font-size: 12px
 
 //Для самых маленьких
 @media ( max-width: 480px )
