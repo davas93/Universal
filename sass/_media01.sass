@@ -2,6 +2,10 @@
   .article-navigation
     position: absolute
     right: 0
+  .article-author
+    &__following
+      min-width: 263px
+
 //Адаптив для средних экранов
 @media ( max-width: 992px )
   .content-container
@@ -15,10 +19,27 @@
     &__descr
       font-size: 16px
       line-height: 25px
+  .article-top
+    &-wrapper
+      flex-direction: column
+  .article-author
+    margin: 30px 0 0 0
+    align-self: center
+
 //Адаптив под смартфоны
 @media ( max-width: 767px )
   .article-head
     padding: 43px 0 40px 0
+  .article-top
+    padding-top: 40px
+    &__content
+      padding-right: 40px
+      font-size: 16px
+      line-height: 30px
+    &--big-letter
+      font-size: 90px
+      line-height: 90px
+
 //Адаптив для меленьких экранов
 @media ( max-width: 575px )
   .content-container
@@ -26,6 +47,12 @@
   .article-head
     &__bookmark
       top: 20px
+  .article-top
+    &__content
+      padding-right: 0
+    &__text
+      margin-bottom: 20px
+      
 //Для самых маленьких
 @media ( max-width: 480px )
   .article-head
