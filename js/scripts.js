@@ -78,5 +78,6 @@ var swiper = new Swiper(".hot-articles__swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    progressbarOpposite: true,
   },
 });
