@@ -78,6 +78,10 @@ var swiper = new Swiper(".hot-articles__swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    progressbarOpposite: true,
   },
+});
+
+//Изменение цвета закладки
+$(".article-head__bookmark").on("click", function () {
+  $(this).toggleClass("article-head__bookmark--active");
 });
