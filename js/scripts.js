@@ -65,3 +65,21 @@ $(function () {
 $(".feature-articles__item-bookmark").on("click", function () {
   $(this).toggleClass("feature-articles__item-bookmark--active");
 });
+
+//слайдер
+var swiper = new Swiper(".hot-articles__swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
