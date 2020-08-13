@@ -70,8 +70,9 @@ $(".feature-articles__item-bookmark").on("click", function () {
 var swiper = new Swiper(".hot-articles__swiper", {
   spaceBetween: 30,
   centeredSlides: true,
+  effect: "fade",
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
