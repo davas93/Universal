@@ -176,6 +176,24 @@
     &--manufacture
       grid-column: 10 / span 3
       grid-row: 2
+  .footer
+    padding: 40px 0 35px 0
+    &-menu
+      flex-wrap: wrap
+      padding-bottom: 20px
+      &__list
+        padding-top: 20px
+        padding-bottom: 20px
+        flex-basis: 33.3%
+    &-contacts
+      padding: 20px 0
+      flex-wrap: wrap
+      &-wrapper
+        padding-bottom: 40px
+    &-bottom
+      padding-top: 20px
+      &__descr
+        max-width: 400px
 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -300,6 +318,25 @@
       flex-basis: 48%
     &--manufacture
       flex-basis: 48%
+  .footer
+    &__title
+      font-size: 30px
+      line-height: 40px
+    &-form
+      &__input
+        min-width: 250px
+    &-logo
+      width: 40px
+      height: 40px
+    &-contacts
+      &__item
+        font-size: 12px
+    &-bottom
+      font-size: 10px
+      line-height: 15px
+  .social-icon
+    width: 30px
+    height: 30px
 
 //Адаптив для меленьких экранов
 @media ( max-width: 575px )
@@ -404,7 +441,20 @@
       flex-basis: 100%
     &--manufacture
       flex-basis: 100%
-
+  .footer
+    &-contacts
+      &__list
+        margin-left: 10px
+      &__item
+        margin-right: 10px
+        &:last-child
+          margin: 0
+    &-bottom
+      flex-direction: column
+      &__descr
+        max-width: 100%
+        margin-bottom: 10px
+        
 //Для самых маленьких
 @media ( max-width: 480px )
   .article-cars
@@ -424,4 +474,30 @@
         maw-width: 100%
       &-content
         max-width: 100%
+  .footer
+    &-form
+      flex-wrap: wrap
+      padding-bottom: 40px
+      &__input
+        flex-basis: 95%
+        margin-bottom: 15px
+    &-menu
+      &__list
+        flex-basis: 50%
+        &-title
+          margin-bottom: 15px
+      &__item
+        &:not(:last-child)
+          margin-bottom: 10px
+    &-contacts
+      &__list
+        margin-left: 25px
+        flex-wrap: wrap
+      &__item
+        flex-basis: 45%
+        margin: 0
+      &-wrapper
+        align-items: flex-start
+        flex-basis: 100%
+          
       
