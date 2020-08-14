@@ -71,6 +71,9 @@
     max-width: 50%
     &__image
       width: 100%
+  .comments__content
+    margin-left: 0
+
  
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -130,6 +133,22 @@
     max-width: 70%
     &__image
       width: 100%
+  .comments
+    padding-top: 60px
+    &__user
+      &-message
+        font-size: 16px
+        line-height: 30px
+      &-avatar
+        width: 60px
+        height: 60px
+    &__title
+      font-size: 35px
+    &__quantity
+      font-size: 35px
+    &__form-avatar
+      width: 60px
+      height: 60px
 
 
 //Адаптив для меленьких экранов
@@ -170,7 +189,31 @@
       top: 0
   .support
     margin-left: 0
-  
+  .comments
+    &__user
+      &-avatar
+        width: 45px
+        height: 45px
+      &-name
+        font-size: 14px
+        line-height: 20px
+      &-message
+        font-size: 14px
+        line-height: 20px
+    &__message
+      padding-right: 20px
+      &:nth-child(2)
+        padding-left: 60px
+    &__form
+      &-avatar
+        width: 45px
+        height: 45px
+        margin-top: 50px
+      &-textarea
+        height: 180px
+    &-form-wrapper
+      padding: 20px 25px 25px 25px
+
       
 //Для самых маленьких
 @media ( max-width: 480px )
@@ -204,3 +247,17 @@
       padding: 7px 12px
   .materials-theme
     max-width: 95%
+  .comments
+    &__info
+      flex-wrap: wrap
+    &__button
+      flex-shrink: 0
+    &__quantity
+      padding-right: 40px
+    &__title
+    &__form-avatar
+      display: none
+    &-form-wrapper
+      padding: 20px 15px 25px 15px
+  .trangle
+    display: none
