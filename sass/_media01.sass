@@ -52,6 +52,14 @@
         left: 20px
       &-next
         right: 20px
+  .article-cont
+    &-wrapper
+      flex-direction: column
+  .materials-theme
+    max-width: 100%
+    padding-right: 40px
+    margin-top: 40px
+    margin-left: 40px
 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -66,6 +74,47 @@
     &__letter
       font-size: 90px
       line-height: 90px
+  .article-author
+    margin-top: 5px
+  .article-cont
+    &__text
+      font-size: 16px
+      line-height: 30px
+    &__content
+      padding-right: 40px
+    &__tags
+      flex-wrap: wrap
+    &__tag
+      margin-bottom: 15px
+  .about
+    &__text
+      font-size: 22px
+      line-height: 25px
+    &__author
+      &-avatar
+        width: 50px
+        height: 50px
+      &-name
+        font-size: 14px
+        line-height: 20px
+      &-position
+        font-size: 12px
+        line-height: 25px
+    &::before
+      width: 50px
+      height: 50px
+      background-size: cover
+      top: 40px
+  .support
+    &__links
+      flex-direction: column
+      align-items: flex-start
+    &__link
+      margin-bottom: 15px
+    &__menu
+      order: -1
+      margin-bottom: 15px
+
 
 //Адаптив для меленьких экранов
 @media ( max-width: 575px )
@@ -87,6 +136,25 @@
         display: none
     &__sliders
       height: 300px
+  .article-cont
+    &__text
+      margin-bottom: 20px
+    &__content
+      padding-right: 0
+    &__tags
+      padding-bottom: 40px
+  .about
+    flex-direction: column
+    margin-left: 20px
+    padding: 0
+    padding-bottom: 20px
+    &__text
+      margin-bottom: 20px
+    &::before
+      top: 0
+  .materials-theme
+    margin-left: 0
+  
       
 //Для самых маленьких
 @media ( max-width: 480px )
