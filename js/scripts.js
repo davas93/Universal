@@ -85,3 +85,16 @@ var swiper = new Swiper(".hot-articles__swiper", {
 $(".article-head__bookmark").on("click", function () {
   $(this).toggleClass("article-head__bookmark--active");
 });
+
+//Cлайдер статьи
+var swiper = new Swiper(".article-slider__sliders", {
+  loop: true,
+  navigation: {
+    nextEl: ".article-slider__button-next",
+    prevEl: ".article-slider__button-prev",
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
