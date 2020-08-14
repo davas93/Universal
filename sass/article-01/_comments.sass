@@ -45,7 +45,9 @@
     &:not(:first-child)
       border-top: 1px solid $line-color
     &:nth-child(2)
-      padding-left: 90px      
+      padding-left: 90px
+    &:nth-child(n+5)
+      display: none   
   &__user
     &-avatar
       width: 75px
@@ -77,25 +79,31 @@
     margin-right: 10px
     &-icon
       margin-right: 5px
+      cursor: pointer
     &-text
       font-weight: 900
       font-size: 12px
       line-height: 15px
       color: $dark
+      cursor: pointer
   &__likes
     display: flex
     align-items: center
     margin-right: 10px
     &-icon
       margin-right: 10px
+      cursor: pointer
     &-text
       font-size: 12px
       line-height: 15px
       color: #939699
+      cursor: pointer
       &--green
         color: #3DC47E
       &--red
         color: #FF4F52
+  &__dislikes
+    cursor: pointer
   &__button-more
     display: flex
     align-items: center
@@ -110,9 +118,16 @@
     border: 1px solid $line-color
     border-radius: 9999px
     background-color: transparent
+    &-icon
+      margin-right: 10px
+      margin-top: 2px
+      align-self: flex-start
+      &--active
+        animation: rot 1s
+
   &-form-wrapper
     display: flex
-    padding: 30px 40px 35px 30px
+    padding: 33px 40px 35px 30px
     background-color: $body-bg
     border-radius: 10px
   &__form
@@ -146,11 +161,12 @@
       align-self: flex-start
       display: flex
       align-items: center
+      padding: 10px 25px 10px 20px
       &-icon
         margin-left: 5px
 .trangle
   position: absolute
-  top: 60px
+  top: 65px
   left: -21px
   z-index: 5
   border: 10px solid transparent
@@ -165,3 +181,9 @@
     border-right: 10px solid $light
     
 
+@keyframes rot
+  0%
+    transform: rotate(0deg)
+    
+  100%
+    transform: rotate(360deg)
