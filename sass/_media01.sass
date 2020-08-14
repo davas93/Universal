@@ -10,6 +10,15 @@
       padding: 12px 15px
     &__descr
       padding: 0 15px
+  .feed-articles
+    padding: 40px 0 20px 0
+    &-wrapper
+      width: 100%
+      overflow-x: scroll
+      scrollbar-width: none
+      -ms-overflow-style: none
+      &::-webkit-scrollbar
+        width: 0
 
 //Адаптив для средних экранов
 @media ( max-width: 992px )
@@ -53,14 +62,16 @@
       &-next
         right: 20px
   .article-cont
+    padding-bottom: 80px
     &-wrapper
       flex-direction: column
   .materials-theme
-    max-width: 100%
-    padding-right: 40px
     margin-top: 40px
     margin-left: 40px
-
+    max-width: 50%
+    &__image
+      width: 100%
+ 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
   .article-head
@@ -106,14 +117,19 @@
       background-size: cover
       top: 40px
   .support
+    text-align: center
+    margin-left: 40px
     &__links
       flex-direction: column
-      align-items: flex-start
+      align-items: center
     &__link
       margin-bottom: 15px
-    &__menu
-      order: -1
-      margin-bottom: 15px
+  .materials-theme
+    margin-left: auto
+    margin-right: auto
+    max-width: 70%
+    &__image
+      width: 100%
 
 
 //Адаптив для меленьких экранов
@@ -152,7 +168,7 @@
       margin-bottom: 20px
     &::before
       top: 0
-  .materials-theme
+  .support
     margin-left: 0
   
       
@@ -186,3 +202,5 @@
         height: 35px
     &__descr
       padding: 7px 12px
+  .materials-theme
+    max-width: 95%
