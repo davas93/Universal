@@ -5,6 +5,11 @@
   .article-author
     &__following
       min-width: 263px
+  .article-slider
+    &__author
+      padding: 12px 15px
+    &__descr
+      padding: 0 15px
 
 //Адаптив для средних экранов
 @media ( max-width: 992px )
@@ -25,6 +30,28 @@
   .article-author
     margin: 30px 0 0 0
     align-self: center
+  .article-slider
+    padding-top: 30px
+    &__sliders
+      height: 400px
+    &__descr
+      font-size: 12px
+      line-height: 15px
+    &__author
+      padding: 5px 15px
+      &-name
+        font-size: 12px
+        line-height: 15px
+      &-position
+        font-size: 10px
+    &__button
+      &-icon
+        width: 40px
+        height: 40px
+      &-prev
+        left: 20px
+      &-next
+        right: 20px
 
 //Адаптив под смартфоны
 @media ( max-width: 767px )
@@ -52,6 +79,14 @@
       padding-right: 0
     &__text
       margin-bottom: 20px
+  .article-slider 
+    &__button
+      &-prev
+        display: none
+      &-next
+        display: none
+    &__sliders
+      height: 300px
       
 //Для самых маленьких
 @media ( max-width: 480px )
@@ -71,3 +106,15 @@
     order: -1
     padding-left: 0
     margin-bottom: 20px
+  .article-slider
+    &-bottom
+      flex-direction: column
+    &__author
+      border-left: none
+      border-top: 1px solid $line-color
+      align-self: stretch
+      &-avatar
+        width: 35px
+        height: 35px
+    &__descr
+      padding: 7px 12px
