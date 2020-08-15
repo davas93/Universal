@@ -120,9 +120,9 @@ $(".form").each(function () {
   $(this).validate({
     errorClass: "invalid",
     messages: {
-      name: {
-        required: "Please specify your name",
-        minlength: "Name must be at least 2 letters long",
+      message: {
+        required: "Please write your comment",
+        minlength: "Comment must be at least 100 characters",
       },
       email: {
         required: "We need your email address to contact you",
