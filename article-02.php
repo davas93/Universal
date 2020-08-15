@@ -1,138 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Roboto+Slab:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>
-      Five Travel Stories From 2017 to Help You Escape Into the World
-    </title>
-  </head>
-
-  <body>
-    <!-- Шапка сайта -->
-    <header class="navbar">
-      <div class="container">
-        <div class="navbar-top">
-          <div class="sections">
-            <button class="menu-button">
-              <img src="img/header/hamburger-menu.svg" alt="icon: menu" />
-            </button>
-            <span class="sections__text">Sections</span>
-          </div>
-          <form action="#" class="navbar__search">
-            <img
-              src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-              data-src="img/header/search-icon.svg"
-              alt="icon: search"
-            />
-            <input
-              type="text"
-              class="navbar__search-input"
-              placeholder="Search"
-            />
-          </form>
-          <a href="#" class="subscribe-now">
-            <img
-              src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-              data-src="img/header/subscribe-Image.jpg"
-              alt="image: subscribe-article"
-              class="subscribe-now__image"
-            />
-            <div class="subscribe-now__text">
-              <span class="subscribe-now__title">Subscribe Now</span
-              ><span class="subscribe-now__descr">3 month for $19</span>
-            </div>
-          </a>
-          <a href="#" class="login">
-            <img
-              src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-              data-src="img/header/user-icon.svg"
-              alt="icon: user"
-              class="login__image"
-            /><span class="login__text">Sign In</span>
-          </a>
-        </div>
-        <!-- /.navbar-top -->
-        <div class="navbar-middle">
-          <div class="navbar-descr">
-            <img
-              src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-              data-src="img/header/navbar-image.jpg"
-              alt="image: statue of Liberty"
-              class="navbar-descr__image"
-            /><span class="navbar-descr__text"
-              >Boston and New York Bear Brunt</span
-            >
-          </div>
-          <a href="index.html" class="logo"
-            ><img
-              src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-              data-src="img/header/logo.svg"
-              alt="Image: logo"
-              class="logo__image"
-          /></a>
-          <div class="date">Monday, January 1, 2018</div>
-          <div class="weather">
-            <img
-              src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-              data-src="img/header/weather-icon.svg"
-              alt="icon: weather"
-              class="weather__icon"
-            /><span class="weather__temp">- 23 °C</span>
-          </div>
-        </div>
-        <!-- /.navbar-middle -->
-      </div>
-      <!-- /.container -->
-      <div class="navbar-bottom">
-        <div class="container">
-          <ul class="navbar-menu">
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">News</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Opinion</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Science</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Life</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Travel</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Moneys</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Art & Design</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Sports</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">People</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Health</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Education</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.navbar-bottom -->
-    </header>
+<?php include('header.php')?>
 
     <!-- Шапка статьи -->
     <section class="article-head">
@@ -213,7 +79,7 @@
           </div>
           <!-- /.article-head-content -->
           <nav class="article-navigation">
-            <a href="index.html" class="article-navigation__link-home">
+            <a href="index.php" class="article-navigation__link-home">
               <img
                 src="img/article-head/home.svg"
                 alt="icon: home"
@@ -221,7 +87,7 @@
               />
               <span class="article-navigation__link-text">Back to main</span>
             </a>
-            <a href="article-01.html" class="article-navigation__link-prev">
+            <a href="article-01.php" class="article-navigation__link-prev">
               <img
                 src="img/article-head/arrow-left.svg"
                 alt="icon: arrow-left"
@@ -229,7 +95,7 @@
               />
               <span class="article-navigation__link-text">Prev</span>
             </a>
-            <a href="article-02.html" class="article-navigation__link-next">
+            <a href="article-02.php" class="article-navigation__link-next">
               <span class="article-navigation__link-text">Next</span>
               <img
                 src="img/article-head/arrow-right.svg"
@@ -1235,7 +1101,7 @@
                 alt="image: user avatar"
                 class="comments__form-avatar"
               />
-              <form action="#" class="comments__form form">
+              <form action="send.php" method="POST" class="comments__form form">
                 <textarea
                   id="textarea"
                   cols="30"
@@ -1274,7 +1140,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <h2 class="footer__title">Subscribe now and get 20% off</h2>
-          <form action="#" class="footer-form form">
+          <form action="send.php" method="POST" class="footer-form form">
             <input
               type="email"
               name="email"
@@ -1286,272 +1152,4 @@
               Subscribe
             </button>
           </form>
-          <div class="footer-menu">
-            <ul class="footer-menu__list footer-menu__list--news">
-              <li class="footer-menu__list-title">
-                <a href="#" class="footer-menu__link">News</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Nation</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">World</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Politics</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Solar Eclipse</a>
-              </li>
-            </ul>
-            <!-- /.footer-menu__list -->
-            <ul class="footer-menu__list list footer-menu__list--arts">
-              <li class="footer-menu__list-title">
-                <a href="#" class="footer-menu__link">Arts</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Art & Design</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Movies</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">People</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Video: Arts</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Theater</a>
-              </li>
-            </ul>
-            <!-- /.footer-menu__list -->
-            <ul class="footer-menu__list list footer-menu__list--traver">
-              <li class="footer-menu__list-title">
-                <a href="#" class="footer-menu__link">Travel</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Destinations</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Flights</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Business Travel</a>
-              </li>
-            </ul>
-            <!-- /.footer-menu__list -->
-            <ul class="footer-menu__list list footer-menu__list--sports">
-              <li class="footer-menu__list-title">
-                <a href="#" class="footer-menu__link">Sports</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Olympics</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Motor Sports</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Volleyball</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">MMA</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Cycling</a>
-              </li>
-            </ul>
-            <!-- /.footer-menu__list -->
-            <ul class="footer-menu__list list footer-menu__list--tech">
-              <li class="footer-menu__list-title">
-                <a href="#" class="footer-menu__link">Tech</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Tech</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Tech Columnists</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Tech Reviews</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Talking Tech</a>
-              </li>
-            </ul>
-            <!-- /.footer-menu__list -->
-            <ul class="footer-menu__list list footer-menu__list--moneys">
-              <li class="footer-menu__list-title">
-                <a href="#" class="footer-menu__link">Moneys</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Markets</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Business</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Personal Finance</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Retirement</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Careers</a>
-              </li>
-            </ul>
-            <!-- /.footer-menu__list -->
-          </div>
-          <!-- /.footer-menu -->
-          <div class="footer-contacts">
-            <div class="footer-contacts-wrapper">
-              <a href="index.html"
-                ><img
-                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                  data-src="img/footer/footer-logo.svg"
-                  alt="logo: unv"
-                  class="footer-logo"
-              /></a>
-              <ul class="footer-contacts__list">
-                <li class="footer-contacts__item">
-                  <a href="#" class="footer-contacts__link">Contact Us</a>
-                </li>
-                <li class="footer-contacts__item">
-                  <a href="#" class="footer-contacts__link">Work with Us</a>
-                </li>
-                <li class="footer-contacts__item">
-                  <a href="#" class="footer-contacts__link">Advertise</a>
-                </li>
-                <li class="footer-contacts__item">
-                  <a href="#" class="footer-contacts__link">Your Ad Choise</a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.footer-contacts-wrapper -->
-            <div class="socials">
-              <a
-                href="https://facebook.com/"
-                class="socials__link"
-                target="_blank"
-                ><svg
-                  class="social-icon facebook-icon"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M24.6234 11.0037L22.2249 11C19.5302 11 17.7888 12.7387 17.7888 15.4298V17.4723H15.3771C15.1688 17.4723 15 17.6367 15 17.8395V20.7988C15 21.0016 15.1689 21.1658 15.3771 21.1658H17.7888V28.633C17.7888 28.8358 17.9575 29 18.1659 29H21.3124C21.5208 29 21.6896 28.8356 21.6896 28.633V21.1658H24.5093C24.7177 21.1658 24.8865 21.0016 24.8865 20.7988L24.8876 17.8395C24.8876 17.7421 24.8478 17.6489 24.7772 17.5799C24.7066 17.511 24.6103 17.4723 24.5103 17.4723H21.6896V15.7409C21.6896 14.9087 21.8933 14.4862 23.0073 14.4862L24.623 14.4857C24.8312 14.4857 25 14.3212 25 14.1186V11.3708C25 11.1683 24.8314 11.0041 24.6234 11.0037Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://twitter.com"
-                class="socials__link"
-                target="_blank"
-                ><svg
-                  class="social-icon twitter-icon"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M28.979 14.3629C28.9532 14.3322 28.9106 14.3217 28.8743 14.3385C28.3361 14.5795 27.77 14.7527 27.1869 14.8551C27.8059 14.385 28.2672 13.7341 28.5037 12.9876C28.5151 12.9519 28.5033 12.9128 28.4744 12.8896C28.4453 12.8663 28.4049 12.8633 28.373 12.8825C27.6758 13.2999 26.9206 13.5941 26.1276 13.7573C25.4248 13.0211 24.4435 12.6 23.4278 12.6C21.3623 12.6 19.6821 14.2961 19.6821 16.3809C19.6821 16.633 19.7063 16.8828 19.7542 17.1252C16.8934 16.947 14.2184 15.5606 12.3995 13.3086C12.3809 13.2856 12.3527 13.2727 12.3232 13.2757C12.2939 13.2779 12.2677 13.2947 12.2529 13.3202C11.9211 13.8948 11.7458 14.5523 11.7458 15.2211C11.7458 16.3803 12.2675 17.4641 13.1559 18.1793C12.6985 18.1238 12.2518 17.9785 11.849 17.7527C11.8219 17.7373 11.7882 17.7375 11.7611 17.7533C11.734 17.7689 11.7168 17.798 11.7161 17.8296L11.7157 17.878C11.7157 19.5428 12.8025 21.0045 14.3487 21.4899C13.9415 21.5561 13.5189 21.5517 13.1036 21.4716C13.073 21.4659 13.0409 21.4765 13.0199 21.5003C12.999 21.5241 12.992 21.5574 13.0016 21.5876C13.4653 23.0484 14.7535 24.0728 16.2531 24.2005C15.0022 25.1256 13.5237 25.613 11.9615 25.613C11.6737 25.613 11.3839 25.5956 11.1 25.562C11.0594 25.5573 11.0192 25.5817 11.0052 25.621C10.9912 25.6606 11.0061 25.7049 11.0412 25.7274C12.7317 26.8218 14.6864 27.4 16.6943 27.4C23.2619 27.4 27.1865 22.0148 27.1865 16.8087C27.1865 16.6637 27.1837 16.5195 27.178 16.3757C27.8865 15.8525 28.4947 15.2122 28.9851 14.471C29.007 14.4379 29.0046 14.3938 28.979 14.3629Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://youtube.com/"
-                class="socials__link"
-                target="_blank"
-                ><svg
-                  class="social-icon youtube-icon"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20 12.8C17.102 12.8 13.3406 13.5294 13.3406 13.5294L13.3311 13.5402C12.0112 13.7522 11 14.8915 11 16.277V23.7217C11.0027 25.0899 11.9937 26.2523 13.3379 26.4652L13.3406 26.4693C13.3406 26.4693 17.102 27.2 20 27.2C22.898 27.2 26.6594 26.4693 26.6594 26.4693C28.0065 26.2555 28.9986 25.0914 29 23.723V16.277C28.998 14.9096 28.0068 13.7464 26.6621 13.5334C26.6594 13.5294 22.898 12.8 20 12.8ZM18.2 16.85L23.6 20L18.2 23.15V16.85Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://instagram.com/"
-                class="socials__link"
-                target="blank"
-                ><svg
-                  class="social-icon instagram-icon"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20 11.5C22.3085 11.5 22.5979 11.5098 23.5045 11.5512C24.4093 11.5924 25.0272 11.7361 25.5678 11.9463C26.1268 12.1634 26.6008 12.4541 27.0734 12.9266C27.5459 13.3992 27.8366 13.8732 28.0538 14.4322C28.2639 14.9728 28.4076 15.5907 28.4488 16.4955C28.4902 17.4021 28.5 17.6915 28.5 20C28.5 22.3085 28.4902 22.5979 28.4488 23.5045C28.4076 24.4093 28.2639 25.0272 28.0538 25.5678C27.8366 26.1268 27.5459 26.6008 27.0734 27.0734C26.6008 27.5459 26.1268 27.8366 25.5678 28.0538C25.0272 28.2639 24.4093 28.4076 23.5045 28.4488C22.5979 28.4902 22.3085 28.5 20 28.5C17.6915 28.5 17.4021 28.4902 16.4955 28.4488C15.5907 28.4076 14.9728 28.2639 14.4322 28.0538C13.8732 27.8366 13.3992 27.5459 12.9266 27.0734C12.4541 26.6008 12.1634 26.1268 11.9463 25.5678C11.7361 25.0272 11.5924 24.4093 11.5512 23.5045C11.5098 22.5979 11.5 22.3085 11.5 20C11.5 17.6915 11.5098 17.4021 11.5512 16.4955C11.5924 15.5907 11.7361 14.9728 11.9463 14.4322C12.1634 13.8732 12.4541 13.3992 12.9266 12.9266C13.3992 12.4541 13.8732 12.1634 14.4322 11.9463C14.9728 11.7361 15.5907 11.5924 16.4955 11.5512C17.4021 11.5098 17.6915 11.5 20 11.5ZM19.9973 22.8298C21.5616 22.8298 22.8298 21.5616 22.8298 19.9973C22.8298 18.433 21.5616 17.1649 19.9973 17.1649C18.433 17.1649 17.1649 18.433 17.1649 19.9973C17.1649 21.5616 18.433 22.8298 19.9973 22.8298ZM19.9973 15.6338C22.4072 15.6338 24.3608 17.5874 24.3608 19.9973C24.3608 22.4072 22.4072 24.3608 19.9973 24.3608C17.5874 24.3608 15.6338 22.4072 15.6338 19.9973C15.6338 17.5874 17.5874 15.6338 19.9973 15.6338ZM25.8556 15.3722C25.8556 15.946 25.3904 16.4111 24.8166 16.4111C24.2429 16.4111 23.7778 15.946 23.7778 15.3722C23.7778 14.7985 24.2429 14.3333 24.8166 14.3333C25.3904 14.3333 25.8556 14.7985 25.8556 15.3722Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-            </div>
-            <!-- /.socials -->
-          </div>
-          <!-- /.footer-contacts -->
-          <div class="footer-bottom">
-            <span class="footer-bottom__descr"
-              >Universal’s business concept is to offer fashion and quality at
-              the best price in a sustainable way. Universal has since it was
-              founded in 2015 grown into one of the world's leading fashion
-              companies.</span
-            ><span class="footer-bottom__info">© 2019 Universal UI Kit</span>
-          </div>
-          <!-- /.footer-bottom -->
-        </div>
-        <!-- /.footer-wrapper -->
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Скрипты -->
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
-</html>
+<?php include('footer.php')?>
