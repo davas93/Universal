@@ -104,12 +104,11 @@ $(".comments__button-more").click(function () {
   $(".comments__button-more-icon").toggleClass(
     "comments__button-more-icon--active"
   );
-  $(".comments__message:nth-child(n+5)").slideToggle(1000);
+  $(".comments__message:nth-child(n+5)").slideToggle(800);
 });
 
 const btn = document.querySelector(".comments__button-more > span");
-var button = document.querySelector(".comments__button-more");
-button.addEventListener("click", function () {
+$(".comments__button-more").on("click", function () {
   btn.innerHTML =
     btn.innerHTML === "Load more"
       ? (btn.innerHTML = "Hide")

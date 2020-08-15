@@ -6,11 +6,24 @@
     align-items: flex-start
     column-gap: 29px
   &__list
-    flex-basis: 74.4%
+    width: 100%
     margin: 0
     padding: 0
-    background-color: $light
-    border-radius: 10px
+    &-wrapper
+      flex-basis: 74.4%
+      background-color: $light
+      border-radius: 10px
+      overflow: hidden
+    &-button
+      display: none
+      width: 100%
+      padding: 11px 0 14px 0
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      background-color: transparent
+      border-top: 1px solid $line-color
   &__item
     position: relative
     display: flex
@@ -53,11 +66,13 @@
       display: flex
       align-items: center
       margin-right: 10px
+      cursor: pointer
       .comment-icon
         margin-right: 5px
     &-likes
       display: flex
       align-items: center
+      cursor: pointer
       .like-icon
         margin-right: 5px
     &-bookmark
