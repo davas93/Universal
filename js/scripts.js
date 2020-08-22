@@ -1,20 +1,28 @@
-//Отложенная загрузка картинок
-window.onload = () => {
-  var imgDefer = document.getElementsByTagName("img");
-  for (var i = 0; i < imgDefer.length; i++) {
-    if (imgDefer[i].getAttribute("data-src")) {
-      imgDefer[i].setAttribute("src", imgDefer[i].getAttribute("data-src"));
-    }
-  }
-};
-
 //Мобильное меню
-$(".menu-button").on("click", function () {
-  $(".navbar-bottom").toggleClass("navbar-bottom--active");
+$(".menu-button").on("click", function (e) {
+  if ($(".navbar-bottom").hasClass("navbar-bottom--desktop")) {
+    if ($(window).scrollTop() >= 140) {
+      $(".navbar-bottom").toggleClass("navbar-bottom--active");
+    }
+  } else {
+    e.preventDefault();
+    $(".navbar-bottom").slideToggle(300);
+  }
 });
-$(".navbar-menu__item").on("click", function () {
-  $(".navbar-bottom").removeClass("navbar-bottom--active");
+//проверка на ширину окна
+$(window).resize(function () {
+  checkWidth();
 });
+$(document).ready(function () {
+  checkWidth();
+});
+function checkWidth() {
+  var w = $(window).outerWidth();
+  $(".navbar-bottom").toggleClass("navbar-bottom--desktop", w >= 768);
+  if (w > 767) {
+    $(".navbar-bottom").removeAttr("style");
+  }
+}
 
 //Вызов модального окна с видео
 $(".play__button").on("click", function () {
@@ -130,4 +138,70 @@ $(".form").each(function () {
       },
     },
   });
+});
+
+//Отложенная загрузка картинок
+function init() {
+  var imgDefer = document.getElementsByTagName("img");
+  for (var i = 0; i < imgDefer.length; i++) {
+    if (imgDefer[i].getAttribute("data-src")) {
+      imgDefer[i].setAttribute("src", imgDefer[i].getAttribute("data-src"));
+    }
+  }
+}
+window.onload = init;
+
+//Модалка авторизации
+$(".login").on("click", function () {
+  $(".sign-in-modal").addClass("sign-in-modal--active");
+  $(".overlay").addClass("overlay--active");
+});
+$(".close-button").on("click", function () {
+  $(".sign-in-modal").removeClass("sign-in-modal--active");
+  $(".overlay").removeClass("overlay--active");
+});
+
+//Валидация модалки
+$(".sign-in-modal__form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      username: {
+        required: "Please enter your username",
+        minlength: "Username must be at least 8 characters",
+      },
+      password: {
+        required: "Enter password",
+        minlength: "Password must be at least 8 characters",
+      },
+    },
+  });
+});
+//Модалка подписки
+$(".subscribe-now").on("click", function () {
+  $(".subscribe-modal").addClass("subscribe-modal--active");
+  $(".overlay").addClass("overlay--active");
+});
+$(".close-button").on("click", function () {
+  $(".subscribe-modal").removeClass("subscribe-modal--active");
+  $(".overlay").removeClass("overlay--active");
+});
+
+//Валидация подписки
+$(".subscribe-modal__form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+});
+//удаление при скролле назад
+$(window).scroll(function () {
+  if ($(this).scrollTop() < 140) {
+    $(".navbar-bottom").removeClass("navbar-bottom--active");
+  }
 });
